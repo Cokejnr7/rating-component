@@ -34,7 +34,14 @@ p {
 
 span {
     color: var(--Medium-Grey);
+    cursor: pointer;
 }
+
+span:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
 
 button {
     background-color: var(--Orange);
@@ -44,6 +51,12 @@ button {
     text-transform: uppercase;
     font-family: var(--font-Overpass);
     color: var(--White);
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--Orange);
+    background-color: var(--White);
 }
 
 /*-------------------------------- rating card --------------------------------------- */
@@ -77,6 +90,11 @@ button {
 .rates {
     display: flex;
     justify-content: space-between;
+}
+
+.selected {
+    background-color: var(--Light-Grey);
+    color: var(--White);
 }
 
 /*----------------------------------- attribution ------------------------------------------ */
