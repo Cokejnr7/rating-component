@@ -12,6 +12,7 @@
     --White: hsl(0, 0%, 100%);
     --Light-Grey: hsl(217, 12%, 63%);
     --Medium-Grey: hsl(216, 12%, 54%);
+    --faded: hsla(216, 12%, 54%, 0.15);
     --Dark-Blue: hsl(213, 19%, 18%);
     --circle-color: hsla(216, 12%, 8%, 0.18);
     --Very-Dark-Blue: hsl(216, 12%, 8%);
@@ -22,7 +23,7 @@
 body {
     width: 100%;
     min-width: 375px;
-    height: 100dvh;
+    min-height: 100%;
     color: var(--White);
     background-color: var(--Very-Dark-Blue);
     font-family: var(--font-Overpass);
@@ -32,14 +33,21 @@ p {
     color: var(--Light-Grey);
 }
 
-span {
+span.circle {
     color: var(--Medium-Grey);
     cursor: pointer;
 }
 
-span:hover {
+span.circle:hover {
     background-color: var(--Orange);
     color: var(--White);
+}
+
+span.statement {
+    color: var(--Orange);
+    background-color: var(--faded);
+    padding: .3rem 1.5rem;
+    border-radius: 1rem;
 }
 
 
@@ -67,7 +75,7 @@ button:hover {
 
 .rating-card {
     max-width: 25rem;
-    min-width: 22rem;
+    min-width: 18rem;
     max-height: 45rem;
     background-color: var(--Dark-Blue);
     position: absolute;
@@ -79,11 +87,11 @@ button:hover {
     flex-direction: column;
     border-radius: 1rem;
     gap: 1.5rem;
-    align-items: center;
 }
 
 .second-state {
     padding: 3rem 1.5rem;
+    align-items: center;
 }
 
 .circle {
@@ -126,6 +134,7 @@ button:hover {
     transform: translateX(-50%);
     bottom: 5px;
     color: var(--White);
+    min-width: 150px;
 }
 
 .attribution a {
