@@ -14,7 +14,7 @@
     --Medium-Grey: hsl(216, 12%, 54%);
     --faded: hsla(216, 12%, 54%, 0.15);
     --Dark-Blue: hsl(213, 19%, 18%);
-    --circle-color: hsla(216, 12%, 8%, 0.18);
+    --circle-color: hsla(216, 12%, 8%, 0.19);
     --Very-Dark-Blue: hsl(216, 12%, 8%);
     --font-Overpass: 'Overpass', sans-serif;
 }
@@ -60,6 +60,8 @@ button {
     font-family: var(--font-Overpass);
     color: var(--White);
     cursor: pointer;
+    letter-spacing: .2rem;
+    font-weight: 700;
 }
 
 button:hover {
@@ -75,7 +77,7 @@ button:hover {
 
 .rating-card {
     max-width: 25rem;
-    min-width: 18rem;
+    min-width: 21rem;
     max-height: 45rem;
     background-color: var(--Dark-Blue);
     position: absolute;
@@ -90,14 +92,14 @@ button:hover {
 }
 
 .second-state {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.8rem;
     align-items: center;
 }
 
 .circle {
     width: 3rem;
     height: 3rem;
-    background-color: var(--circle-color);
+    background-color: var(--faded);
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -111,7 +113,7 @@ button:hover {
 
 .selected {
     background-color: var(--Light-Grey);
-    color: var(--White);
+    color: var(--White) !important;
 }
 
 .header-paragraph {
